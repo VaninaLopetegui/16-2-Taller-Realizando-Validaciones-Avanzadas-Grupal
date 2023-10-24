@@ -50,10 +50,10 @@
             </div>
             </div>
             <div class="col-sm-6">
-              <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1" required>
-              <div class="valid-feedback">
-                Todo bien
+            <label for="password1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password1" required>
+            <div class="valid-feedback">
+              Todo bien
             </div>
             <div class="invalid-feedback">
                 Es necesario poner la contraseña
@@ -61,18 +61,51 @@
             </div>
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2" required>
+              <input type="password" class="form-control" id="password2" required >
               <div class="valid-feedback">
                 Todo bien
-            </div>
-            <div class="invalid-feedback">
-                Deben coincidir las dos contraseñas!
-            </div>
+              </div>
+              <div class="invalid-feedback">
+                  Deben coincidir las dos contraseñas!
+              </div>
             </div>
             <div class="col-sm-12" id="buttonTerminos">
               <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
-                data-bs-target="#modalTerminos">Términos del servicio</button>
+                data-bs-target="#modalTerminos" id="termsBtn">Términos del servicio</button>
+              <div class="valid-feedback">
+                Todo bien
+              </div>
+              <div class="invalid-feedback">
+                  Es necesario aceptar los términos
+              </div>
             </div>
+        
+            <!-- Modal -->
+
+            <div class="modal fade" id="modalTerminos" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5">Términos y condiciones del servicio.</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi sapiente voluptatum deserunt?
+                      Deleniti, adipisci vitae in quaerat eius nemo optio? Quas at magni saepe cumque. Delectus perspiciatis omnis
+                      accusamus.</p>
+                  </div>
+                    <div class="modal-footer">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="terminos">
+                        <label class="form-check-label" for="terminos" id="termsLabel">Acepto los términos y condiciones del servicio.</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fin modal -->
+
             <button class="btn btn-primary" type="submit" id="submitBtn">Registrarme</button>
           </div> 
         </div>
@@ -86,28 +119,6 @@
       <p class="mb-1">Es un sitio generado con fines estrictamente educativos. No realiza registros ni guarda datos de
         ningún tipo.</p>
     </footer>
-  </div>
-
-  <div class="modal fade" id="modalTerminos" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5">Términos y condiciones del servicio.</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi sapiente voluptatum deserunt?
-            Deleniti, adipisci vitae in quaerat eius nemo optio? Quas at magni saepe cumque. Delectus perspiciatis omnis
-            accusamus.</p>
-        </div>
-        <div class="modal-footer">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="terminos">
-            <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio.</label>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
